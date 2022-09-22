@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -12,24 +12,51 @@
     />
     <link rel="stylesheet" href="assets/css/style.css" />
 
-    <title>Document</title>
+    <title>Mi tienda</title>
   </head>
   <body>
-    <nav>Mi E-commerce</nav>
-    <div class="grid-container">
-      <aside>Categorias</aside>
-      <section>
-        Productos
-        <div class="grid-products">
-          <div class="grid-item">RTX 3090 TI</div>
-          <div class="grid-item">Monitor MSI Optix MAG27C</div>
-          <div class="grid-item">Teclado Logitech G213 Prodigy</div>
-          <div class="grid-item">
-            AMD Ryzen 9 5950X 4.9GHz Turbo 16Core 32 Hilos
+    <div class="grid-container main">
+      <header class="title">Mi E-commerce</header>
+      <aside class="flex-container filter-bar">
+        <p>Categorias</p>
+        <button type="button">Monitores</button>
+        <button type="button">Procesadores</button>
+        <button type="button">Tarjetas de video</button>
+        <button type="button">Teclados</button>
+      </aside>
+
+      <section class="products">
+        <div class="grid-products grid-container">
+          <div class="card">
+            <img src="assets/img/rtx.jpg" alt="imagen tarjeta video" />
+            <h4>Nvidia Rtx 3090 TI 24GB DDR5</h4>
+            <del>$1.590.990</del>
+            <p>$1.000.000</p>
+            <button>Comprar</button>
+          </div>
+          <div class="card">
+            <img src="assets/img/monitor.jpg" alt="imagen monitor " />
+            <h4>Monitor MSI Optix MAG27C</h4>
+            <del>$250.990</del>
+            <p>$189.990</p>
+            <button>Comprar</button>
+          </div>
+          <div class="card">
+            <img src="assets/img/teclado.jpg" alt="imagen teclado " />
+            <h4>Teclado Logitech G213 Prodigy</h4>
+            <p>$79.990</p>
+            <button>Comprar</button>
+          </div>
+          <div class="card">
+            <img src="assets/img/ryzen.jpg" alt="imagen procesado ryzen" />
+            <h4>AMD Ryzen 9 5950X 4.9GHz Turbo 16Core 32 Hilos</h4>
+            <del>$320.790</del>
+            <p>$250.000</p>
+            <button>Comprar</button>
           </div>
         </div>
       </section>
-      <footer>E-Commerce Diego Cuadra</footer>
+      <footer class="footer">E-Commerce Diego Cuadra</footer>
     </div>
   </body>
 </html>
